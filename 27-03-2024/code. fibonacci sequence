@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main() {
+  int i, n;
+  int a= 0, b =1;
+  int m = a+b;
+  scanf("%d", &n);
+  printf("series: %d, %d, ", a,b);
+  for (i=3;i<= n;i++) {
+    printf("%d ",m);
+    a=b;
+    b=m;
+    m=a+ b;
+  }
+}
