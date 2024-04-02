@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main()
+{
+    int n,sum=0,ab;
+    scanf("%d",&n);
+    while(n>0)
+    {
+        ab=n%10;
+        if(ab%2==1)
+        {
+            sum=sum+ud;
+        }
+        n=n/10;
+    }
+    if(sum%2==0)
+    {
+        printf("Lucky number");
+    }
+    else
+    {
+        printf("Not lucky number");
+    }
+    return 0;
+}
