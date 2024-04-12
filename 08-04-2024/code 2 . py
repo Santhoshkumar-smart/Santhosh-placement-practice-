@@ -1,0 +1,12 @@
+s = "Move#Hash#to#Front"
+  
+s_list = list(s)
+h_index = 0
+
+for i in range(len(s_list)):
+    if s_list[i] == '#':
+        s_list[i], s_list[h_index] = s_list[h_index], s_list[i]
+        h_index += 1
+  
+modified_string = ''.join(s_list)
+print(modified_string)
