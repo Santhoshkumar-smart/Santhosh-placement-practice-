@@ -1,0 +1,16 @@
+arr = [4, 7, 3, 6, 7]
+triangle = []
+triangle.append(arr)
+for i in range(len(arr) - 1, 0, -1):
+    current_row = triangle[0]
+    next_row = []
+  
+    for j in range(len(current_row) - 1):
+        next_row.append(current_row[j] + current_row[j + 1])
+  
+    triangle.insert(0, next_row)
+
+for row in triangle:
+    print(" ".join(map(str, row)))
+      
+print(sum(triangle[0]))
