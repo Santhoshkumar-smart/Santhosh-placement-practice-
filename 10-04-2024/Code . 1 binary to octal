@@ -1,0 +1,4 @@
+binary_number = input("Enter a binary number: ")
+decimal_number = int(binary_number, 2)
+octal_number = oct(decimal_number)
+print("Octal equivalent:", octal_number)
