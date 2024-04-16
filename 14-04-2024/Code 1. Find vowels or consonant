@@ -1,0 +1,10 @@
+
+vowels = 'aeiou'
+character = input("Enter an alphabet: ")
+
+if character.lower() in vowels:
+    print("The alphabet is a Vowel")
+elif character.isalpha():
+    print("The alphabet is a Consonant")
+else:
+    print("Not a valid alphabet")
