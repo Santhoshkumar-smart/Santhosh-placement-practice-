@@ -1,0 +1,13 @@
+s=input().strip()
+v=[]
+for i in s:
+    if i in "AEIOUaeiou":
+        v.append(i)
+v=v[::-1]
+k=0
+for i in s:
+    if i in "AEIOUaeiou":
+        print(v[k],end="")
+        k+=1
+    else:
+        print(i,end="")
