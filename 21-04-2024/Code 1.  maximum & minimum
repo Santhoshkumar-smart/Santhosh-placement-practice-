@@ -1,0 +1,10 @@
+def find_max_min(a, b):
+    maxi = max(a, b)
+    mini = min(a, b)
+    return maxi, mini
+    
+num1 = 9
+num2 = 5
+maxi, mini = find_max_min(num1, num2)
+print("Maxi:", maxi)
+print("Mini:", mini)
