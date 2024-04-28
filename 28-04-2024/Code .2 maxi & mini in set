@@ -1,8 +1,0 @@
-num_set = {3, 7, 1, 5, 9, 2, 8, 4, 6}
-
-max_element = max(num_set)
-min_element = min(num_set)
-
-print("Set:", num_set)
-print("Maximum element:", max_element)
-print("Minimum element:", min_element)
