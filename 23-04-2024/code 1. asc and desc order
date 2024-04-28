@@ -1,0 +1,17 @@
+def sort_first_half_ascending_second_half_descending(arr):
+    length = len(arr)
+    midpoint = length // 2
+    
+    first_half = sorted(arr[:midpoint])
+
+    second_half = sorted(arr[midpoint:], reverse=True)
+
+    sorted_arr = first_half + second_half
+
+    return sorted_arr
+
+# Test the function
+arr = [3, 7, 1, 5, 9, 2, 8, 4, 6]
+sorted_arr = sort_first_half_ascending_second_half_descending(arr)
+print( arr)
+print( sorted_arr)
